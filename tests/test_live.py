@@ -1,6 +1,6 @@
 import os
 import sys
-from glitch_integrations.integration_engine import IntegrationEngine
+from glitch_integrations.integration_engine import integration_engeine as IntegrationEngine
 
 def run_provider_tests():
     print("==================================================")
