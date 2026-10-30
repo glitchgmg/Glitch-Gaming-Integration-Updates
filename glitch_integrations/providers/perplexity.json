@@ -1,0 +1,16 @@
+{
+  "provider": "perplexity",
+  "display_name": "Perplexity",
+  "api_family": "chat_completions",
+  "endpoint": "https://api.perplexity.ai/chat/completions",
+  "model_strategy": "user_selectable",
+  "default_model": "sonar",
+  "native_search": {
+    "supported": true,
+    "mode": "search-first model"
+  },
+  "authentication": {
+    "type": "bearer"
+  },
+  "optional": true
+}

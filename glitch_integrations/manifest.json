@@ -1,0 +1,33 @@
+{
+  "configuration_version": "2.0.1",
+  "providers": [
+    "providers/google.json",
+    "providers/openai.json",
+    "providers/xai.json",
+    "providers/anthropic.json",
+    "providers/perplexity.json",
+    "providers/deepseek.json"
+  ],
+  "search": [
+    "search/native-search.json",
+    "search/deepseek-search.json",
+    "search/fallback-policy.json"
+  ],
+  "files": {
+    "__init__.py": "48aca12b55630d52788ce05f117bbaebd70f62ddff66b0e05e2e983b136b6cd6",
+    "integration_engine.py": "12b2f5e1c628f5a8d72e2ee7921b80a1ffb02435bd619a9725fb2dfb61cb5a43",
+    "providers/anthropic.json": "6ef099f3b144f006e242250f92e16acd2332760800154ca1652b6a20132aa351",
+    "providers/deepseek.json": "4bc77a6f3d985b9a33ee9a120cba21d78b52e72542da87051a18f498079160a7",
+    "providers/google.json": "3f510fda838797d3129a211f0f51a9016afdf63f48df82983f83645e476a5f8e",
+    "providers/openai.json": "b8e160ab4e0e7a15ce7423f98ed05394103519288d76eb2877a7d6dffadaaf58",
+    "providers/perplexity.json": "5cda99ca1be3218aae2a6682a5aed0c76fee57c2490a7d9bfa861ab8566e5332",
+    "providers/xai.json": "550de20912192118d9b784f1d5b51e884ce695a46fed4a3b2469d4fe90cbd45e",
+    "schemas/manifest.schema.json": "44467194da460bf6743e285df44b6b5d82a10480ff0f8f964d263d5ccb6253c9",
+    "schemas/provider.schema.json": "c9244e38aa5e4823ecf0b0c906d0ca42388b0960e9e12d6fb9e2ce8427675b95",
+    "search/deepseek-search.json": "a479ee2dbb741cf472d6e5e209b8d77df1a9340f86c354ea593eb953c707147e",
+    "search/fallback-policy.json": "2080b2844505d001905b8c0c85a11eafb17791cebeacdae3508b78bd29392336",
+    "search/native-search.json": "b6d6eec9ec4e8a7f26c132fb2977743815da2163ade147ed8c00bd2c0bdc8fe8"
+  },
+  "security_note": "SHA-256 file hashes are integrity checks only. Production auto-updates must also verify a detached signature using a public key embedded in the application.",
+  "package_note": "Reusable Python package for third-party applications; no specific tracker version is required."
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "anthropic",
+  "display_name": "Anthropic / Claude",
+  "api_family": "messages",
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "model_strategy": "user_selectable",
+  "default_model": "claude-sonnet-4-20250514",
+  "native_search": {
+    "supported": true,
+    "tool": "web_search_20250305"
+  },
+  "authentication": {
+    "type": "api_key_header",
+    "header_name": "x-api-key",
+    "version_header": "anthropic-version"
+  },
+  "optional": true
+}

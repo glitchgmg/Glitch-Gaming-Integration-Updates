@@ -1,0 +1,16 @@
+{
+  "provider": "xai",
+  "display_name": "xAI / Grok",
+  "api_family": "responses",
+  "endpoint": "https://api.x.ai/v1/responses",
+  "model_strategy": "user_selectable",
+  "default_model": "grok-3-latest",
+  "native_search": {
+    "supported": true,
+    "tool": "web_search"
+  },
+  "authentication": {
+    "type": "bearer"
+  },
+  "optional": true
+}

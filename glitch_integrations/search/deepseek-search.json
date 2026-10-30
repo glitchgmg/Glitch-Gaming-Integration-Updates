@@ -1,0 +1,8 @@
+{
+  "provider": "deepseek_search_fetch",
+  "display_name": "DeepSeek Search and Fetch",
+  "search_endpoint": "https://api.deepseek.com/v1/tools/search",
+  "fetch_endpoint": "https://api.deepseek.com/v1/tools/fetch",
+  "authentication": "bearer",
+  "enabled_by_user": false
+}

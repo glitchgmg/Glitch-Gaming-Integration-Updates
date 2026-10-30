@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Glitch Gaming Integration Manifest",
+  "type": "object",
+  "required": [
+    "configuration_version",
+    "minimum_tracker_version",
+    "providers",
+    "search"
+  ],
+  "properties": {
+    "configuration_version": {
+      "type": "string"
+    },
+    "minimum_tracker_version": {
+      "type": "string"
+    },
+    "providers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "openai",
+  "display_name": "OpenAI / ChatGPT",
+  "api_family": "responses",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model_strategy": "user_selectable",
+  "default_model": "gpt-4.1-mini",
+  "native_search": {
+    "supported": true,
+    "tool": "web_search"
+  },
+  "authentication": {
+    "type": "bearer"
+  },
+  "optional": true
+}

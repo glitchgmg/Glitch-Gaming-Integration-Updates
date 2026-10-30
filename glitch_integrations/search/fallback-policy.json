@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "ai_provider_order": [
+    "google",
+    "openai",
+    "xai",
+    "anthropic",
+    "perplexity",
+    "deepseek"
+  ],
+  "search_order": [
+    "native_provider_search",
+    "deepseek_search_fetch",
+    "manual_sources"
+  ],
+  "retry_failed_provider_once": false,
+  "preserve_last_successful_result": true,
+  "require_user_enabled_provider": true
+}

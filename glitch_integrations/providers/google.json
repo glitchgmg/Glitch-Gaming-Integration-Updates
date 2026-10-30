@@ -1,0 +1,17 @@
+{
+  "provider": "google",
+  "display_name": "Google Gemini",
+  "api_family": "generateContent",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+  "model_strategy": "user_selectable",
+  "default_model": "gemini-2.5-flash",
+  "native_search": {
+    "supported": true,
+    "tool": "google_search"
+  },
+  "authentication": {
+    "type": "query_parameter",
+    "query_parameter": "key"
+  },
+  "optional": true
+}

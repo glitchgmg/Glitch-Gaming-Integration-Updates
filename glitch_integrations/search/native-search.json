@@ -1,0 +1,11 @@
+{
+  "description": "Use a provider's native search tool when its selected model and API support it.",
+  "providers": [
+    "google",
+    "openai",
+    "xai",
+    "anthropic",
+    "perplexity"
+  ],
+  "fallback": "separate_search"
+}

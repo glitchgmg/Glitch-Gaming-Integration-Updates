@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glitch-gaming-ai-integrations"
+version = "2.0.1"
+description = "Reusable multi-provider AI integration engine for Python applications"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Glitch Gaming" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["glitch_integrations*"]

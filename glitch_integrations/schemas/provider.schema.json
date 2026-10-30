@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/OWNER/REPO/main/glitch_integrations/schemas/provider.schema.json",
+  "title": "Glitch Gaming Provider Integration Schema",
+  "description": "Defines approved provider configuration fields for the Glitch Gaming Integration Auto-Updater.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "provider",
+    "display_name",
+    "api_family",
+    "endpoint",
+    "model_strategy",
+    "required_capabilities",
+    "fallback_enabled"
+  ],
+  "properties": {
+    "provider": {
+      "type": "string",
+      "enum": [
+        "google",
+        "openai",
+        "xai",
+        "anthropic",
+        "perplexity",
+        "deepseek"
+      ]
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "api_family": {
+      "type": "string",
+      "enum": [
+        "generateContent",
+        "responses",
+        "messages",
+        "chat_completions"
+      ]
+    },
+    "endpoint": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "model_strategy": {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "user_selectable",
+        "discover_compatible",
+        "preferred_with_fallback"
+      ]
+    },
+    "preferred_models": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "required_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "text_generation",
+          "web_search",
+          "structured_output",
+          "streaming"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "fallback_enabled": {
+      "type": "boolean"
+    },
+    "fallback_models": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "authentication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "bearer",
+            "api_key_header",
+            "query_parameter"
+          ]
+        },
+        "header_name": {
+          "type": "string"
+        },
+        "query_parameter": {
+          "type": "string"
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minimum_tracker_version": {
+          "type": "string"
+        },
+        "configuration_version": {
+          "type": "string"
+        },
+        "last_verified": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "native_search": {
+      "type": "object",
+      "properties": {
+        "supported": {
+          "type": "boolean"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "supported"
+      ],
+      "additionalProperties": true
+    }
+  }
+}

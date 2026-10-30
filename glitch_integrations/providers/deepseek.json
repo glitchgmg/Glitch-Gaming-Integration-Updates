@@ -1,0 +1,15 @@
+{
+  "provider": "deepseek",
+  "display_name": "DeepSeek",
+  "api_family": "chat_completions",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "model_strategy": "user_selectable",
+  "default_model": "deepseek-chat",
+  "native_search": {
+    "supported": false
+  },
+  "authentication": {
+    "type": "bearer"
+  },
+  "optional": true
+}
